@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main>
+
+        <div class="container">
+            <div class="center pt-8">
+                <div id="player-turn-wrapper">
+                    <div id="game-players-label">Xurrasco vs Scoob</div>
+                    <span id="player-turn-label">Opponent's turn!</span>
+                    <div><img src="./icons/player_o.svg" alt="Player X"></div>
+                </div>
+                
+                <div id="game-grid">
+                    <div class="game-cell">
+                        <div class="grid-icon">
+                        <img src="./icons/player_x.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_o.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_o.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_o.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_o.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_x.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_x.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_x.svg" alt="Player X">
+                    </div>
+                </div>
+                <div class="game-cell">
+                    <div class="grid-icon">
+                        <img src="./icons/player_o.svg" alt="Player X">
+                    </div>
+                </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+    <div id="room-wrapper"></div>
+</body>
+
+<script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+<script src="./socket.js"></script>
+<script src="./game.js"></script>
+</html>
