@@ -28,7 +28,7 @@ class roomManager {
 
     addPlayerToRoom(username, id, roomNumber) {
         // desired room
-        if(roomNumber != 0 && this._roomList[roomNumber - 1].players.length < 2) {
+        if(roomNumber !== 0 && this._roomList[roomNumber - 1].players.length < 2) {
             return this._setPlayerRoom({ username, id }, this._roomList[roomNumber - 1]);
         }
 
@@ -44,7 +44,7 @@ class roomManager {
             return this._setPlayerRoom({ username, id }, emptyRooms[0]);
         }
 
-        return { room: undefined };
+        return undefined;
     }
 
     removePlayerFromRoom(id) {

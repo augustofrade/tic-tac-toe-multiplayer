@@ -16,6 +16,10 @@ body {
     padding-top: 32px;
 }
 
+.d-none {
+    display: none !important;
+}
+
 main {
     min-height: 100vh;
 }
@@ -34,7 +38,7 @@ main {
 
 
 /* ####################### */
-/* Player Turn Display     */
+/* Match & Player Turn     */
 /* ####################### */
 #player-turn-wrapper {
     text-align: center;
@@ -53,9 +57,39 @@ main {
     width: 64px;
 }
 
-#game-players-label {
+#match-header {
+    margin-bottom: 20px;
+}
+
+#match-players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.match-player {
+    font-weight: 700;
+    width: 120px;
+    overflow-x: hidden;
+}
+.player-name {
+    font-size: 18px;
+}
+.player-score {
+    font-size: 24px;
+}
+
+#match-waiting-players {
     font-weight: 700;
     font-size: 18px;
+}
+
+#match-player-1 {
+    text-align: right;
+}
+#match-player-2 {
+    text-align: left;
 }
 
 
@@ -122,7 +156,7 @@ main {
     outline: none;
     cursor: pointer;
     padding: 12px 16px;
-    width: 64px;
+    width: 128px;
     height: 40px;
     font-size: 16px;
     font-weight: 600;
@@ -137,4 +171,5 @@ main {
 
 .room-join[disabled] {
     background-color: #a8dadc;
+    color: #121214;
 }
